@@ -16,4 +16,7 @@ response = requests.get(URL, param) #passes two parameters: URL and a parameter 
 print(response.url)
 data = response.json() #returned response can be converted into a json object using json()
 latitude = data['results'][0]['geometry']['location']['lat'] 
-print("Latitude:%s"%(latitude))
+longitude = data['results][0]['geometry']['location']['lng']
+print("Latitude:%s\nLongitude:%s"%(latitude,longitude)) 
+#Latitude:28.7499867
+#Longitude:77.1183137
